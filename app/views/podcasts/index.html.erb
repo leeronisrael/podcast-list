@@ -1,0 +1,6 @@
+<%= @title %>
+<ul>
+  <% @podcasts.each do |podcast| %>
+    <li><%= link_to(podcast.name,"/podcasts/#{podcast.id}") %></li>
+  <% end %>
+</ul>
